@@ -36,17 +36,15 @@ console.log(supplyChanges);
 console.log('6. Showing supplyChanges...');
 for( let x=0; x<supplyChanges.length; x++ ) {
     console.log(supplyChanges[x]);
-    if( x > 0 ) {
+    if( supplyChanges[x] > 0 ) {
         console.log('Added', supplyChanges[x], 'parts.');
+    } else if( supplyChanges[x] < 0 ) {
+        console.log('Removed', supplyChanges[x], 'parts.')
+    } else{
+        console.log('No Change.')
     }
-    //if else( x === 0 ) {
-     //   console.log('No Change.');
-    //if( x < 0 ) {
-     //   console.log('Removed', supplyChanges[x], 'parts.');
     }
-    //}
-    //}
-
+    
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
