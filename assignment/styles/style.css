@@ -1,4 +1,6 @@
 /* give your assignment a fun background color */
 body {
-    background-color: darkcyan;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    background-image: linear-gradient( to right, rgb(0, 0, 220), rgb(10, 105, 129), rgb(0, 102, 0));
 }
